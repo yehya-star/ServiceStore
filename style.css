@@ -1,0 +1,24 @@
+:root{
+  --primary: #007bff;
+  --accent: #ff8800;
+  --muted: #6c757d;
+  font-family: "Tajawal", sans-serif;
+}
+body { font-family: "Tajawal", sans-serif; background:#f8f9fa; }
+.navbar-brand img { border-radius: 50%; }
+.card { border: none; }
+.hero { padding: 48px 0; }
+.hero img { max-width: 100%; }
+.btn.blue { background: var(--primary); color: #fff; border: none; }
+.btn.yellow { background: var(--accent); color:#fff; border: none; }
+.text-end { text-align: right; }
+
+/* language direction handling */
+[dir="rtl"] .navbar .nav-links { direction: rtl; }
+[dir="ltr"] .navbar .nav-links { direction: ltr; }
+
+/* responsive niceties */
+@media (max-width: 767px){
+  .hero { padding: 24px 0; }
+  .text-end { text-align: center; }
+}
